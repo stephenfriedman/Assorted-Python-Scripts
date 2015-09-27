@@ -1,0 +1,18 @@
+import random
+words="is certainly an interesting move for the Wild. Rupp does not play an altogether different game than Powe, though Rupp has much more size, and is certainly not afraid to drop the gloves. This has to be a move to improve the size of the team. The Wild have been pushed around this season, and adding Rupp to the lineup, along with Coyle, puts two big bodies in the line up in a short amount of time."
+words=words.upper();
+seed=input("Seed length: ")
+randStart=random.randrange(0,len(words)-seed)
+seedString=words[randStart:randStart+seed]
+print seedString
+list=words.split(seedString)
+afters=""
+finalOutput=""
+for blah in list:
+   if blah[0]=="":
+       afters=afters+" "
+   else:
+        afters=afters+blah[0]
+
+randAfters= afters[random.randrange(0,len(afters)+1)]
+finalOutput=finalOutput+randAfters

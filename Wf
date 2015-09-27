@@ -1,0 +1,5 @@
+a = "meow cats 123 hello goodbye test computer progmram"
+delimeter =4
+b=a.split("m")
+print b
+
